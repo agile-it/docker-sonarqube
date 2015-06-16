@@ -16,4 +16,3 @@ This starts a postgres which is also listening on the mapped port 12345 (needed 
 To start the sonarqube container use:
 
 `docker run -d --link psql_sonar:db --name sonarqube -p 9000:9000 -e SONARQUBE_JDBC_URL=jdbc:postgresql://db/sonar agileit/sonarqube`
-`docker run -d --link psql_sonar:db --name sonarqube -p 9000:9000 -e SONARQUBE_JDBC_URL=jdbc:postgresql://db/sonar agileit/sonarqube`
